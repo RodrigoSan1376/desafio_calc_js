@@ -68,9 +68,9 @@ function btnClearClick(event) {
 // The code below is to prevent the use of any value other than a number, but is allowed to use the dot for decimal places.
 
 const inputInvalid1 = document.querySelector('[name="number1"]');
-inputInvalid1.addEventListener('keypress', handleInputNumber1KeyPress);
+inputInvalid1.addEventListener('keypress', handleInputInvalid1KeyPress);
 
-function handleInputNumber1KeyPress(event) {    
+function handleInputInvalid1KeyPress(event) {    
     const charCode = event.which ? event.which : event.keyCode;
     const charTyped = String.fromCharCode(charCode);
     const regex = /^[0-9.]+$/;
@@ -80,9 +80,9 @@ function handleInputNumber1KeyPress(event) {
 };
 
 const inputInvalid2 = document.querySelector('[name="number2"]');
-inputInvalid2.addEventListener('keypress', handleInputNumber2KeyPress);
+inputInvalid2.addEventListener('keypress', handleInputInvalid2KeyPress);
 
-function handleInputNumber2KeyPress(event) {
+function handleInputInvalid2KeyPress(event) {
     const charCode = event.which ? event.which : event.keyCode;
     const charTyped = String.fromCharCode(charCode);
     const regex = /^[0-9.]+$/;
